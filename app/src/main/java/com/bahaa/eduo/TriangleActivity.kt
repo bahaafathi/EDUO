@@ -26,7 +26,7 @@ class TriangleActivity : AppCompatActivity() {
             val areaString = areaEditText.text.toString()
             val area = areaString.toDoubleOrNull()
 
-            if (area != null && area > 0 && isApproximatelyEqual(area, calculateArea())) {
+            if ((area != null) && (area > 0) && area.equals(calculateArea())) {
                 val intent = Intent(this, ResultActivity::class.java)
                 intent.putExtra("result", "Good")
                 startActivity(intent)
@@ -44,8 +44,4 @@ class TriangleActivity : AppCompatActivity() {
         return b * h / 2.0
     }
 
-    private fun isApproximatelyEqual(a: Double, b: Double): Boolean {
-        val epsilon = 0.0001
-        return Math.abs(a - b) < epsilon
-    }
 }
