@@ -28,11 +28,11 @@ class TriangleActivity : AppCompatActivity() {
 
             if ((area != null) && (area > 0) && area.equals(calculateArea())) {
                 val intent = Intent(this, ResultActivity::class.java)
-                intent.putExtra("result", "Good")
+                intent.putExtra("result", "true")
                 startActivity(intent)
             } else {
                 val intent = Intent(this, ResultActivity::class.java)
-                intent.putExtra("result", "Bad")
+                intent.putExtra("result", "false")
                 startActivity(intent)
             }
         }
