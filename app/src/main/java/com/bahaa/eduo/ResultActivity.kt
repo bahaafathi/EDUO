@@ -22,10 +22,10 @@ class ResultActivity : AppCompatActivity() {
 
         if (result) {
             resultImageView.setImageResource(R.drawable.smiley)
-            resultTextView.text = "Right"
+            resultTextView.text = "Your answer is correct"
         } else {
             resultImageView.setImageResource(R.drawable.sad)
-            resultTextView.text = "Wrong"
+            resultTextView.text = "Your answer is Wrong"
         }
 
 
