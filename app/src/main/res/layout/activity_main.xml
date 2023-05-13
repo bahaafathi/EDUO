@@ -3,86 +3,102 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
-
+    android:padding="16dp"
+    >
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="EDUO"
+         android:textSize="30dp"
+         android:layout_gravity="center"
+         android:layout_marginBottom="40dp"
+         />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        >
 
         <ImageView
             android:id="@+id/triangle_image_view"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
             android:src="@drawable/triangle"
-            android:tooltipText="triangle"
-            />
+            android:tooltipText="triangle" />
 
         <EditText
             android:id="@+id/triangle_edit_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Enter image name"
-            />
+            android:hint="What is the shape? " />
 
         <Button
             android:id="@+id/triangle_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Triangle" />
+
+            android:text="Submit" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        >
 
         <ImageView
             android:id="@+id/circle_image_view"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:src="@drawable/circle"
-            android:tooltipText="circle"/>
+            android:tooltipText="circle" />
 
         <EditText
             android:id="@+id/circle_edit_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Enter image name" />
+            android:hint="What is the shape? " />
 
         <Button
             android:id="@+id/circle_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Circle" />
+            android:text="Submit" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        >
 
         <ImageView
             android:id="@+id/rectangle_image_view"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:src="@drawable/rectangle"
-            android:tooltipText="rectangle"
-            />
+            android:tooltipText="rectangle" />
 
         <EditText
             android:id="@+id/rectangle_edit_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Enter image name" />
+            android:hint="What is the shape? " />
 
         <Button
             android:id="@+id/rectangle_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rectangle" />
+            android:text="Submit" />
 
     </LinearLayout>
 

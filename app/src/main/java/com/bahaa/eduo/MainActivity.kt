@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         triangleButton.setOnClickListener {
             if (!isValidImageName("triangle")) {
-                showErrorMessage("Incorrect image name!")
+                showErrorMessage("Try again!")
                 return@setOnClickListener
             }
             val intent = Intent(this, TriangleActivity::class.java)
@@ -30,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         }
         circleButton.setOnClickListener {
             if (!isValidImageName("circle")) {
-                showErrorMessage("Incorrect image name!")
+                showErrorMessage("Try again!")
                 return@setOnClickListener
             }
             val intent = Intent(this, CircleActivity::class.java)
@@ -38,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         }
         rectangleButton.setOnClickListener {
             if (!isValidImageName("rectangle")) {
-                showErrorMessage("Incorrect image name!")
+                showErrorMessage("Try again!")
                 return@setOnClickListener
             }
             val intent = Intent(this, RectangleActivity::class.java)
