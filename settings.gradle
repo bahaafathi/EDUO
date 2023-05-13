@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "EDUO"
-include(":app")
+include ':app'
